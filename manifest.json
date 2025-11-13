@@ -1,11 +1,11 @@
 {
-  "name": "MusicPlayer",
-  "short_name": "MusicPlayer",
+  "name": "AI:DIO",
+  "short_name": "AI:DIO",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#181818",
-  "theme_color": "#007BFF",
-  "description": "A simple PWA music player for your albums on S3.",
+  "theme_color": "#3CB16F",
+  "description": "A simple music player for your AI albums.",
   "icons": [
     { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }

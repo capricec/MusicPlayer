@@ -76,7 +76,7 @@ function renderSongList(songs, selectedIdx = 0) {
   songs.forEach((song, idx) => {
     const div = document.createElement('div');
     div.className = 'song-item' + (idx === selectedIdx ? ' selected' : '');
-    div.innerHTML = `<span class="song-title">${song.name}</span>` ;
+    div.innerHTML = `<span class="song-number">${idx + 1}.</span> <span class="song-title">${song.name}</span>` ;
     div.addEventListener('click', () => selectSong(idx));
     songList.appendChild(div);
   });
@@ -92,6 +92,10 @@ function updateDisplayedSongs() {
   if (isShuffling) shuffle(currentSongs);
   renderSongList(currentSongs, 0);
   currentSongIdx = 0;
+  // Always set player src for iOS
+  if (currentSongs[0] && currentSongs[0].url) {
+    audioPlayer.src = currentSongs[0].url;
+  }
   setPlayerSrcToCurrentSong();
   updateAlbumRowSelection();
 }
@@ -136,9 +140,12 @@ function fetchAndLoadLibrary() {
       setupLibraryFromAlbums(albumsData);
       renderAlbumOptions(allSongs);
       updateDisplayedSongs();
+      // Set first song src so audio controls show on iOS
+      if (allSongs[0] && allSongs[0].url) {
+        audioPlayer.src = allSongs[0].url;
+      }
       if (isShuffling) shuffleBtn.classList.add('active');
       else shuffleBtn.classList.remove('active');
-      setPlayerSrcToCurrentSong();
     })
     .catch(err => {
       showError('Error loading music library: ' + err.message);

@@ -3,20 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Music Player</title>
+  <title>AI:DIO</title>
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>MusicPlayer</h1>
-    <button id="refreshBtn" aria-label="Refresh Music Library" title="Refresh" class="header-refresh">⟳</button>
+    <h1>AI:DIO</h1>
+    <button id="refreshBtn" aria-label="Refresh Music Library" title="Refresh" class="header-refresh">
+      <svg width="30" height="30" viewBox="0 0 30 30" stroke="#70d8ff" stroke-width="1.0" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M17.65 6.35A8 8 0 1 0 19 15" />
+        <polyline points="20 6 20 10 16 10" />
+      </svg>
+    </button>
   </header>
   <main>
     <div id="player-area">
       <button id="prevBtn" title="Previous Song" tabindex="0">&#9664;</button>
       <div id="player-controls">
-        <audio id="audioPlayer" controls preload="metadata"></audio>
+        <audio id="audioPlayer" controls preload="metadata">
+          <source src="https://cdn.jsdelivr.net/gh/anars/blank-audio@master/1-second-of-silence.mp3" type="audio/mp3">
+        </audio>
         <button id="shuffleBtn" title="Shuffle Playlist">Shuffle</button>
       </div>
       <button id="nextBtn" title="Next Song" tabindex="0">&#9654;</button>
