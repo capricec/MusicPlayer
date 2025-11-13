@@ -6,10 +6,14 @@ let currentSongs = [];
 let currentAlbum = 'all';
 let currentSongIdx = 0;
 let isShuffling = false;
+let albumNames = [];
 const audioPlayer = document.getElementById('audioPlayer');
 const songList = document.getElementById('song-list');
-const albumSelector = document.getElementById('albumSelector');
+const albumRow = document.getElementById('album-row');
 const shuffleBtn = document.getElementById('shuffleBtn');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const refreshBtn = document.getElementById('refreshBtn');
 
 function showLoading(text = 'Loading music library...') {
   songList.innerHTML = `<div style='padding:2em;text-align:center;color:#aaa;'>${text}</div>`;
@@ -33,9 +37,38 @@ function setupLibraryFromAlbums(albums) {
 }
 
 function renderAlbumOptions(songs) {
-  const albums = Array.from(new Set(songs.map(s => s.album)));
-  albumSelector.innerHTML = `<option value="all">All Albums</option>` +
-    albums.map(alb => `<option value="${alb}">${alb}</option>`).join('');
+  albumNames = Array.from(new Set(songs.map(s => s.album)));
+  renderAlbumRow(albumNames);
+}
+
+function renderAlbumRow(albums) {
+  albumRow.innerHTML = '';
+  // All Albums chip
+  const allChip = document.createElement('button');
+  allChip.className = 'album-chip' + (currentAlbum === 'all' ? ' selected' : '');
+  allChip.textContent = 'All Albums';
+  allChip.addEventListener('click', () => { updateAlbumSelection('all'); });
+  albumRow.appendChild(allChip);
+  // Album chips
+  albums.forEach(name => {
+    const chip = document.createElement('button');
+    chip.className = 'album-chip' + (currentAlbum === name ? ' selected' : '');
+    chip.textContent = name;
+    chip.addEventListener('click', () => { updateAlbumSelection(name); });
+    albumRow.appendChild(chip);
+  });
+}
+
+function updateAlbumRowSelection() {
+  // Update highlighting for chips
+  const chips = albumRow.querySelectorAll('.album-chip');
+  chips.forEach(c => {
+    if ((c.textContent === 'All Albums' && currentAlbum === 'all') || (c.textContent === currentAlbum)) {
+      c.classList.add('selected');
+    } else {
+      c.classList.remove('selected');
+    }
+  });
 }
 
 function renderSongList(songs, selectedIdx = 0) {
@@ -43,8 +76,7 @@ function renderSongList(songs, selectedIdx = 0) {
   songs.forEach((song, idx) => {
     const div = document.createElement('div');
     div.className = 'song-item' + (idx === selectedIdx ? ' selected' : '');
-    div.innerHTML = `<span class="song-title">${song.name}</span>` +
-        `<span class="song-album">${song.album || 'Unknown'}</span>`;
+    div.innerHTML = `<span class="song-title">${song.name}</span>` ;
     div.addEventListener('click', () => selectSong(idx));
     songList.appendChild(div);
   });
@@ -61,6 +93,7 @@ function updateDisplayedSongs() {
   renderSongList(currentSongs, 0);
   currentSongIdx = 0;
   setPlayerSrcToCurrentSong();
+  updateAlbumRowSelection();
 }
 
 function shuffle(arr) {
@@ -83,41 +116,79 @@ function setPlayerSrcToCurrentSong() {
   renderSongList(currentSongs, currentSongIdx);
 }
 
-// ========== Event Handlers ===========
-albumSelector.addEventListener('change', e => {
-  currentAlbum = albumSelector.value;
+function updateAlbumSelection(albumName) {
+  currentAlbum = albumName;
   updateDisplayedSongs();
-});
+}
 
+function fetchAndLoadLibrary() {
+  showLoading();
+  fetch(LIBRARY_URL + '?_ts=' + Date.now())
+    .then(resp => {
+      if (!resp.ok) throw new Error('Could not fetch library.json');
+      return resp.json();
+    })
+    .then(albumsData => {
+      if (!albumsData || !Array.isArray(albumsData) || albumsData.length === 0) {
+        showError('No music albums found in the library.');
+        return;
+      }
+      setupLibraryFromAlbums(albumsData);
+      renderAlbumOptions(allSongs);
+      updateDisplayedSongs();
+      if (isShuffling) shuffleBtn.classList.add('active');
+      else shuffleBtn.classList.remove('active');
+      setPlayerSrcToCurrentSong();
+    })
+    .catch(err => {
+      showError('Error loading music library: ' + err.message);
+    });
+}
+
+// ========== Event Handlers ===========
 shuffleBtn.addEventListener('click', () => {
   isShuffling = !isShuffling;
-  shuffleBtn.textContent = isShuffling ? 'Shuffle: On' : 'Shuffle';
+  if (isShuffling) {
+    shuffleBtn.classList.add('active');
+  } else {
+    shuffleBtn.classList.remove('active');
+  }
   updateDisplayedSongs();
-});
-
-audioPlayer.addEventListener('ended', () => {
-  if (currentSongIdx < currentSongs.length - 1) {
-    selectSong(currentSongIdx + 1);
+  if (currentSongs.length > 0) {
+    audioPlayer.play();
   }
 });
 
+prevBtn.addEventListener('click', () => {
+  if (currentSongs.length === 0) return;
+  currentSongIdx = (currentSongIdx === 0) ? currentSongs.length - 1 : currentSongIdx - 1;
+  setPlayerSrcToCurrentSong();
+  audioPlayer.play();
+});
+
+nextBtn.addEventListener('click', () => {
+  if (currentSongs.length === 0) return;
+  currentSongIdx = (currentSongIdx + 1) % currentSongs.length;
+  setPlayerSrcToCurrentSong();
+  audioPlayer.play();
+});
+
+audioPlayer.addEventListener('ended', () => {
+  if (currentSongs.length === 0) return;
+  if (currentSongIdx < currentSongs.length - 1) {
+    selectSong(currentSongIdx + 1);
+  } else {
+    selectSong(0);
+  }
+});
+
+refreshBtn.addEventListener('click', fetchAndLoadLibrary);
+
 // ========== Initialize =============
-showLoading();
-fetch(LIBRARY_URL)
-  .then(resp => {
-    if (!resp.ok) throw new Error('Could not fetch library.json');
-    return resp.json();
-  })
-  .then(albumsData => {
-    if (!albumsData || !Array.isArray(albumsData) || albumsData.length === 0) {
-      showError('No music albums found in the library.');
-      return;
-    }
-    setupLibraryFromAlbums(albumsData);
-    renderAlbumOptions(allSongs);
-    updateDisplayedSongs();
-    shuffleBtn.textContent = 'Shuffle';
-  })
-  .catch(err => {
-    showError('Error loading music library: ' + err.message);
+fetchAndLoadLibrary();
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/service-worker.js');
   });
+}

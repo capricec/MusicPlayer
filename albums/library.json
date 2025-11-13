@@ -1,34 +1,148 @@
 [
   {
-    "name": "Construction Country Rap",
+    "name": "BathTime",
+    "tracks": [
+      {
+        "title": "Bubble Bath Backhoe",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/BathTime/Bubble Bath Backhoe.mp3"
+      },
+      {
+        "title": "Bubble Bath Blues",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/BathTime/Bubble Bath Blues.mp3"
+      },
+      {
+        "title": "Bubble Bath Parade",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/BathTime/Bubble Bath Parade.mp3"
+      },
+      {
+        "title": "No Bath Blues (1)",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/BathTime/No Bath Blues (1).mp3"
+      },
+      {
+        "title": "No Bath Blues",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/BathTime/No Bath Blues.mp3"
+      },
+      {
+        "title": "Soak It Up",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/BathTime/Soak It Up.mp3"
+      }
+    ]
+  },
+  {
+    "name": "Construction Chill",
+    "tracks": [
+      {
+        "title": "Blaze of the Day",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Chill/Blaze of the Day.mp3"
+      },
+      {
+        "title": "Brick by Brick",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Chill/Brick by Brick.mp3"
+      },
+      {
+        "title": "Building Dreams (1)",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Chill/Building Dreams (1).mp3"
+      },
+      {
+        "title": "Building Dreams",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Chill/Building Dreams.mp3"
+      },
+      {
+        "title": "City of Glass",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Chill/City of Glass.mp3"
+      },
+      {
+        "title": "Cranes in the Sky",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Chill/Cranes in the Sky.mp3"
+      },
+      {
+        "title": "Diggin' Deep",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Chill/Diggin' Deep.mp3"
+      },
+      {
+        "title": "Digging Deep",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Chill/Digging Deep.mp3"
+      },
+      {
+        "title": "Hard Hat Hustle",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Chill/Hard Hat Hustle.mp3"
+      },
+      {
+        "title": "Rolling Through the Day",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Chill/Rolling Through the Day.mp3"
+      },
+      {
+        "title": "Sky Dancers",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Chill/Sky Dancers.mp3"
+      },
+      {
+        "title": "Trash Queen",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Chill/Trash Queen.mp3"
+      },
+      {
+        "title": "Wrecking Ball Groove",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Chill/Wrecking Ball Groove.mp3"
+      }
+    ]
+  },
+  {
+    "name": "Construction Country Rock Rap",
     "tracks": [
       {
         "title": "Backhoe Boogie",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rap/Backhoe Boogie.mp3"
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rock Rap/Backhoe Boogie.mp3"
+      },
+      {
+        "title": "Chasing the Wind",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rock Rap/Chasing the Wind.mp3"
+      },
+      {
+        "title": "Crush and Fly",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rock Rap/Crush and Fly.mp3"
+      },
+      {
+        "title": "Digging Down Deep (1)",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rock Rap/Digging Down Deep (1).mp3"
+      },
+      {
+        "title": "Digging Down Deep",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rock Rap/Digging Down Deep.mp3"
+      },
+      {
+        "title": "Dirt and Diesel",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rock Rap/Dirt and Diesel.mp3"
       },
       {
         "title": "Dump It Low",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rap/Dump It Low.mp3"
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rock Rap/Dump It Low.mp3"
       },
       {
         "title": "Fire Truck Groove",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rap/Fire Truck Groove.mp3"
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rock Rap/Fire Truck Groove.mp3"
       },
       {
         "title": "Fire Truck Rumble",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rap/Fire Truck Rumble.mp3"
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rock Rap/Fire Truck Rumble.mp3"
+      },
+      {
+        "title": "Monster Mayhem",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rock Rap/Monster Mayhem.mp3"
+      },
+      {
+        "title": "Rollin' Heavy",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rock Rap/Rollin' Heavy.mp3"
       },
       {
         "title": "Skidsteer Shuffle",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rap/Skidsteer Shuffle.mp3"
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rock Rap/Skidsteer Shuffle.mp3"
       },
       {
         "title": "Trash Truck Groove copy",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rap/Trash Truck Groove copy.mp3"
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rock Rap/Trash Truck Groove copy.mp3"
       },
       {
         "title": "Trash Truck Groove",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rap/Trash Truck Groove.mp3"
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rock Rap/Trash Truck Groove.mp3"
       }
     ]
   },
@@ -40,10 +154,6 @@
         "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Funk/Cement Mixer Funk (1).mp3"
       },
       {
-        "title": "Cement Mixer Funk",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Funk/Cement Mixer Funk.mp3"
-      },
-      {
         "title": "Dig It Down",
         "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Funk/Dig It Down.mp3"
       },
@@ -52,28 +162,24 @@
         "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Funk/Dig It, Baby!.mp3"
       },
       {
-        "title": "Dump It Down 2",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Funk/Dump It Down 2.mp3"
+        "title": "Dozer Groove",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Funk/Dozer Groove.mp3"
       },
       {
-        "title": "Dump It Down",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Funk/Dump It Down.mp3"
+        "title": "Dump It Down 2",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Funk/Dump It Down 2.mp3"
       },
       {
         "title": "Funky Flashing Lights (1)",
         "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Funk/Funky Flashing Lights (1).mp3"
       },
       {
-        "title": "Funky Flashing Lights",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Funk/Funky Flashing Lights.mp3"
-      },
-      {
-        "title": "Funky Front Loader Groove (1)",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Funk/Funky Front Loader Groove (1).mp3"
-      },
-      {
         "title": "Funky Front Loader Groove",
         "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Funk/Funky Front Loader Groove.mp3"
+      },
+      {
+        "title": "Rolling Down the Street",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Funk/Rolling Down the Street.mp3"
       },
       {
         "title": "Skid Steer Groove",
@@ -82,55 +188,96 @@
     ]
   },
   {
-    "name": "Doctor Pop",
+    "name": "Doctor Animal Pop",
     "tracks": [
       {
+        "title": "Aya's Groove",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Animal Pop/Aya's Groove.mp3"
+      },
+      {
         "title": "Call the Medics",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Pop/Call the Medics.mp3"
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Animal Pop/Call the Medics.mp3"
       },
       {
         "title": "Call the Medics2",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Pop/Call the Medics2.mp3"
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Animal Pop/Call the Medics2.mp3"
       },
       {
         "title": "Cutting Edge Queens",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Pop/Cutting Edge Queens.mp3"
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Animal Pop/Cutting Edge Queens.mp3"
       },
       {
         "title": "Cutting Edge Queens2",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Pop/Cutting Edge Queens2.mp3"
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Animal Pop/Cutting Edge Queens2.mp3"
       },
       {
         "title": "Doctor's Groove (1)",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Pop/Doctor's Groove (1).mp3"
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Animal Pop/Doctor's Groove (1).mp3"
       },
       {
         "title": "Doctor's Groove",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Pop/Doctor's Groove.mp3"
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Animal Pop/Doctor's Groove.mp3"
       },
       {
         "title": "Doctor's Orders",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Pop/Doctor's Orders.mp3"
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Animal Pop/Doctor's Orders.mp3"
       },
       {
         "title": "Doctor's Orders2",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Pop/Doctor's Orders2.mp3"
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Animal Pop/Doctor's Orders2.mp3"
       },
       {
         "title": "Feline Groove",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Pop/Feline Groove.mp3"
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Animal Pop/Feline Groove.mp3"
       },
       {
         "title": "Heart of a Healer",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Pop/Heart of a Healer.mp3"
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Animal Pop/Heart of a Healer.mp3"
       },
       {
         "title": "Heart of a Healer2",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Pop/Heart of a Healer2.mp3"
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Animal Pop/Heart of a Healer2.mp3"
       },
       {
         "title": "Lab Queens",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Pop/Lab Queens.mp3"
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Animal Pop/Lab Queens.mp3"
+      },
+      {
+        "title": "Rhiannon, The Doctor",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Animal Pop/Rhiannon, The Doctor.mp3"
+      },
+      {
+        "title": "Whisker Groove",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Doctor Animal Pop/Whisker Groove.mp3"
+      }
+    ]
+  },
+  {
+    "name": "Riffs",
+    "tracks": [
+      {
+        "title": "Chew on That",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Riffs/Chew on That.mp3"
+      },
+      {
+        "title": "Keys in the Car",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Riffs/Keys in the Car.mp3"
+      },
+      {
+        "title": "Shattered Reflections",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Riffs/Shattered Reflections.mp3"
+      },
+      {
+        "title": "Sour Vision",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Riffs/Sour Vision.mp3"
+      },
+      {
+        "title": "Step in It",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Riffs/Step in It.mp3"
+      },
+      {
+        "title": "Too Hot to Handle",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Riffs/Too Hot to Handle.mp3"
       }
     ]
   }

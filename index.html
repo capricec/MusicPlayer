@@ -4,21 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music Player</title>
+  <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>MusicPlayer</h1>
-    <button id="shuffleBtn">Shuffle</button>
-    <select id="albumSelector">
-      <option value="all">All Albums</option>
-      <!-- Album options dynamically added here -->
-    </select>
+    <button id="refreshBtn" aria-label="Refresh Music Library" title="Refresh" class="header-refresh">⟳</button>
   </header>
   <main>
     <div id="player-area">
-      <audio id="audioPlayer" controls preload="metadata"></audio>
+      <button id="prevBtn" title="Previous Song" tabindex="0">&#9664;</button>
+      <div id="player-controls">
+        <audio id="audioPlayer" controls preload="metadata"></audio>
+        <button id="shuffleBtn" title="Shuffle Playlist">Shuffle</button>
+      </div>
+      <button id="nextBtn" title="Next Song" tabindex="0">&#9654;</button>
     </div>
+    <div id="album-row"></div>
     <div id="song-list"></div>
   </main>
   <script src="app.js"></script>

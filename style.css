@@ -8,50 +8,162 @@ body {
 header {
   background: #222;
   padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+  position: relative;
+  text-align: center;
 }
 header h1 {
   margin: 0;
   font-size: 1.8rem;
+  display: inline-block;
+  vertical-align: middle;
 }
-#shuffleBtn,
-#albumSelector {
-  padding: 0.5em 1em;
-  background: #333;
-  color: #fafafa;
+.header-refresh {
+  position: absolute;
+  right: 1.6rem;
+  top: 1.0rem;
+  background: none;
   border: none;
-  border-radius: 4px;
+  color: #70d8ff;
+  font-size: 1.65rem;
   cursor: pointer;
+  border-radius: 2.3em;
+  width: 2.1em;
+  height: 2.1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.18s, color 0.18s;
 }
-#shuffleBtn:hover,
-#albumSelector:hover {
-  background: #444;
+.header-refresh:hover, .header-refresh:focus {
+  background: #222e;
+  color: #ffffff;
 }
+
 main {
   padding: 2rem;
   max-width: 700px;
   margin: 3rem auto 0 auto;
 }
-#drop-area {
-  background: #292929;
-  border: 2px dashed #555;
-  border-radius: 10px;
-  padding: 2rem;
-  text-align: center;
-  color: #aaa;
-  margin-bottom: 2rem;
-}
 #player-area {
-  margin-bottom: 2rem;
+  margin-bottom: 0.8rem;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+#player-controls {
+  display: flex;
+  align-items: center;
   justify-content: center;
+  background: #F3F3F3;
+  border-radius: 40px;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.10), 0 1.5px 3px 0 rgba(0,0,0,0.12);
+  padding: 0.20rem 1.5rem 0.17rem 1.5rem;
+  gap: 0.12rem;
+  width: 100%;
+  max-width: 600px;
+  min-width: 250px;
 }
 #audioPlayer {
-  width: 100%;
-  max-width: 400px;
+  width: 330px;
+  max-width: 480px;
+  min-width: 170px;
+  background: transparent;
+  flex: 1 1 50%;
+}
+#prevBtn, #nextBtn {
+  background: transparent;
+  border: none;
+  color: #007BFF;
+  font-size: 1.0em;
+  font-weight: 700;
+  margin: 0 0.17em;
+  padding: 0 0.23em;
+  cursor: pointer;
+  transition: color 0.17s, background 0.17s;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: none;
+  min-width: 0;
+  height: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#prevBtn:hover, #nextBtn:hover {
+  color: #007BFF;
+}
+#shuffleBtn {
+  border-radius: 18px;
+  min-width: 4.1em;
+  font-size: 1em;
+  font-weight: 700;
+  margin-left: 0.6em;
+  margin-right: 0.12em;
+  padding: 0.38em 1.1em;
+  background: #e9e9e9;
+  color: #232;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: background 0.2s, color 0.2s;
+}
+#shuffleBtn:hover, #shuffleBtn.active {
+  color: #007BFF;
+}
+#shuffleBtn.active {
+  background: #007BFF;
+  border: 1px solid #70d8ff;
+  color: #fff;
+}
+#audioPlayer::-webkit-media-controls-panel {
+  background: transparent;
+}
+#audioPlayer::-webkit-media-controls {
+  background: transparent;
+  color-scheme: light;
+}
+#album-row {
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 1rem 0 1.5rem 0;
+  margin: 0 auto 0 auto;
+  max-width: 100vw;
+}
+.album-chip {
+  display: inline-block;
+  background: #292929;
+  color: #70d8ff;
+  padding: 0.5em 1.2em;
+  border-radius: 24px;
+  cursor: pointer;
+  border: 1px solid #333;
+  font-weight: 500;
+  outline: none;
+  transition: background 0.2s, color 0.2s;
+  margin-right: 0.5rem;
+  margin-bottom: 0.3em;
+  white-space: nowrap;
+}
+.album-chip.selected,
+.album-chip:hover {
+  background: #007BFF;
+  color: #fff;
+  border: 1px solid #70d8ff;
+}
+#albumSelector {
+  width: auto;
+  margin: 0 0 1.1rem 0;
+  padding: 0.4em 1.3em 0.4em 0.7em;
+  border-radius: 7px;
+  border: 1px solid #232;
+  background: #292929;
+  color: #70d8ff;
+  font-size: 1rem;
+  font-family: inherit;
+  display: block;
 }
 #song-list {
   background: #222;
@@ -83,11 +195,37 @@ main {
 .song-item.selected {
   background: #333;
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   main {
     padding: 1rem;
   }
   #player-area {
     margin-bottom: 1rem;
+  }
+  #player-controls {
+    max-width: 99vw;
+    padding: 0.18rem 0.6rem;
+  }
+  #audioPlayer {
+    width: 94vw;
+    min-width: 70px;
+    max-width: 99vw;
+  }
+  #shuffleBtn {
+    font-size: 1em;
+    min-width: 3.6em;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    padding: 0.7rem 0.4rem;
+    text-align: center;
+  }
+  .header-refresh {
+    right: 0.5rem;
+    top: 0.5rem;
+    font-size: 1.44rem;
+    width: 1.7em;
+    height: 1.7em;
   }
 }
