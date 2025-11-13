@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>MusicPlayer</h1>
+    <button id="shuffleBtn">Shuffle</button>
+    <select id="albumSelector">
+      <option value="all">All Albums</option>
+      <!-- Album options dynamically added here -->
+    </select>
+  </header>
+  <main>
+    <div id="drop-area">
+      <p>Drag & Drop MP3 files or folders here, or <input type="file" id="fileElem" multiple webkitdirectory directory accept="audio/mpeg" style="display:none;"><label for="fileElem" style="cursor:pointer;color:#007BFF;">browse</label></p>
+    </div>
+    <div id="player-area">
+      <audio id="audioPlayer" controls preload="metadata"></audio>
+    </div>
+    <div id="song-list"></div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
