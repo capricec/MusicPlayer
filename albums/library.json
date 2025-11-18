@@ -3,24 +3,24 @@
     "name": "BathTime",
     "tracks": [
       {
+        "title": "Bath Time Parade",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/BathTime/Bath Time Parade.mp3"
+      },
+      {
         "title": "Bubble Bath Backhoe",
         "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/BathTime/Bubble Bath Backhoe.mp3"
       },
       {
-        "title": "Bubble Bath Blues",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/BathTime/Bubble Bath Blues.mp3"
+        "title": "Cat Bath Blues",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/BathTime/Cat Bath Blues.mp3"
       },
       {
-        "title": "Bubble Bath Parade",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/BathTime/Bubble Bath Parade.mp3"
+        "title": "Construction Bath Blues",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/BathTime/Construction Bath Blues.mp3"
       },
       {
-        "title": "No Bath Blues (1)",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/BathTime/No Bath Blues (1).mp3"
-      },
-      {
-        "title": "No Bath Blues",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/BathTime/No Bath Blues.mp3"
+        "title": "Part of Me",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/BathTime/Part of Me.mp3"
       },
       {
         "title": "Soak It Up",
@@ -40,10 +40,6 @@
         "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Chill/Brick by Brick.mp3"
       },
       {
-        "title": "Building Dreams (1)",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Chill/Building Dreams (1).mp3"
-      },
-      {
         "title": "Building Dreams",
         "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Chill/Building Dreams.mp3"
       },
@@ -56,16 +52,16 @@
         "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Chill/Cranes in the Sky.mp3"
       },
       {
-        "title": "Diggin' Deep",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Chill/Diggin' Deep.mp3"
-      },
-      {
-        "title": "Digging Deep",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Chill/Digging Deep.mp3"
+        "title": "Digging Down Deep",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Chill/Digging Down Deep.mp3"
       },
       {
         "title": "Hard Hat Hustle",
         "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Chill/Hard Hat Hustle.mp3"
+      },
+      {
+        "title": "Higher Than it Seems",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Chill/Higher Than it Seems.mp3"
       },
       {
         "title": "Rolling Through the Day",
@@ -93,6 +89,14 @@
         "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rock Rap/Backhoe Boogie.mp3"
       },
       {
+        "title": "Backhoe Digging a Trench",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rock Rap/Backhoe Digging a Trench.mp3"
+      },
+      {
+        "title": "Big Wheels Rolling",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rock Rap/Big Wheels Rolling.mp3"
+      },
+      {
         "title": "Chasing the Wind",
         "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rock Rap/Chasing the Wind.mp3"
       },
@@ -101,12 +105,8 @@
         "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rock Rap/Crush and Fly.mp3"
       },
       {
-        "title": "Digging Down Deep (1)",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rock Rap/Digging Down Deep (1).mp3"
-      },
-      {
-        "title": "Digging Down Deep",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rock Rap/Digging Down Deep.mp3"
+        "title": "Diggin' Deep",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rock Rap/Diggin' Deep.mp3"
       },
       {
         "title": "Dirt and Diesel",
@@ -137,8 +137,8 @@
         "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rock Rap/Skidsteer Shuffle.mp3"
       },
       {
-        "title": "Trash Truck Groove copy",
-        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rock Rap/Trash Truck Groove copy.mp3"
+        "title": "Til the Core is Found",
+        "url": "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/Construction Country Rock Rap/Til the Core is Found.mp3"
       },
       {
         "title": "Trash Truck Groove",
