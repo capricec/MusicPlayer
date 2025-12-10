@@ -1,5 +1,5 @@
 // ======== AWS S3 library.json fetch =========
-const LIBRARY_URL = 'http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/library.json';
+const LIBRARY_URL = 'https://originaldatum.com/musicPlayer/albums/library.json';
 
 let allSongs = [];
 let currentSongs = [];

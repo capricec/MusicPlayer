@@ -2,7 +2,7 @@ import os
 import json
 
 ALBUMS_ROOT = "albums"
-BASE_S3_URL = "http://caprice.carstensen.s3-website-us-west-2.amazonaws.com/musicPlayer/albums/"
+BASE_S3_URL = "https://originaldatum.com/musicPlayer/albums/"
 
 library = []
 
