@@ -406,12 +406,24 @@
         "url": "https://originaldatum.com/musicPlayer/albums/Trains/Chuggin' Along with Annie, Harvey, and Gordon.mp3"
       },
       {
+        "title": "Chugging Softly",
+        "url": "https://originaldatum.com/musicPlayer/albums/Trains/Chugging Softly.mp3"
+      },
+      {
+        "title": "Click Clack",
+        "url": "https://originaldatum.com/musicPlayer/albums/Trains/Click Clack.mp3"
+      },
+      {
         "title": "Gordon the Mighty Train",
         "url": "https://originaldatum.com/musicPlayer/albums/Trains/Gordon the Mighty Train.mp3"
       },
       {
         "title": "Harvey the Train Crane",
         "url": "https://originaldatum.com/musicPlayer/albums/Trains/Harvey the Train Crane.mp3"
+      },
+      {
+        "title": "Rolling Down the Line",
+        "url": "https://originaldatum.com/musicPlayer/albums/Trains/Rolling Down the Line.mp3"
       },
       {
         "title": "Thomas the Train",
@@ -424,6 +436,10 @@
       {
         "title": "Train Song",
         "url": "https://originaldatum.com/musicPlayer/albums/Trains/Train Song.mp3"
+      },
+      {
+        "title": "Where the Wild Winds Blow",
+        "url": "https://originaldatum.com/musicPlayer/albums/Trains/Where the Wild Winds Blow.mp3"
       }
     ]
   }
